@@ -1,0 +1,2511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Tamil Nadu State Championship 2026 – Register Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #5e0f1c;
+        --ink2: #8f1d2c;
+        --gold: #ffc83d;
+        --gold2: #ffdf85;
+        --bg: #fbf8f6;
+        --card: #fff;
+        --tx: #26121a;
+        --mut: #6a5559;
+        --line: #eadfdd;
+        --ok: #0f9d6b;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #1c0c10;
+          --card: #2a1319;
+          --tx: #fbeff1;
+          --mut: #cfa9b0;
+          --line: #4a2229;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #1c0c10;
+        --card: #2a1319;
+        --tx: #fbeff1;
+        --mut: #cfa9b0;
+        --line: #4a2229;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 72px;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--tx);
+        font:
+          16px/1.6 "DM Sans",
+          system-ui,
+          sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Bricolage Grotesque", "DM Sans", sans-serif;
+        line-height: 1.05;
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+      a {
+        color: inherit;
+      }
+      :focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+      }
+      .wrap {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 22px;
+      }
+      /* nav */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(94, 15, 28, 0.92);
+        backdrop-filter: blur(10px);
+        color: #fff;
+      }
+      nav .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font:
+          800 18px "Bricolage Grotesque",
+          sans-serif;
+        text-decoration: none;
+      }
+      .logo i {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: conic-gradient(
+          var(--gold) 0 25%,
+          #fff 0 50%,
+          var(--gold) 0 75%,
+          #fff 0
+        );
+        display: block;
+        border: 3px solid var(--gold);
+      }
+      nav ul {
+        display: flex;
+        gap: 26px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+      }
+      nav ul a {
+        text-decoration: none;
+        opacity: 0.85;
+      }
+      nav ul a:hover {
+        opacity: 1;
+      }
+      .btn {
+        display: inline-block;
+        background: var(--gold);
+        color: #241a00;
+        font:
+          700 15px "DM Sans",
+          sans-serif;
+        border: 0;
+        border-radius: 999px;
+        padding: 13px 26px;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 0.15s,
+          box-shadow 0.15s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 22px rgba(255, 200, 61, 0.4);
+      }
+      .btn.ghost {
+        background: transparent;
+        color: #fff;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+      }
+      @media (max-width: 760px) {
+        nav ul {
+          display: none;
+        }
+      }
+      /* hero */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: var(--ink);
+      }
+      .hero .wrap {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 40px;
+        align-items: center;
+        padding-top: 76px;
+        padding-bottom: 84px;
+      }
+      .hero h1 {
+        font-size: clamp(46px, 8vw, 104px);
+        font-weight: 800;
+      }
+      .hero h1 span {
+        display: block;
+        color: var(--gold);
+      }
+      .hero p.lead {
+        font-size: 19px;
+        max-width: 520px;
+        color: #f7dde1;
+        margin: 22px 0 30px;
+      }
+      .cta {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .rings {
+        position: absolute;
+        right: -160px;
+        top: -120px;
+        width: 620px;
+        height: 620px;
+        opacity: 0.14;
+        pointer-events: none;
+      }
+      .count {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        padding: 26px;
+        backdrop-filter: blur(6px);
+      }
+      .count h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+        font-weight: 700;
+      }
+      .cd {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        text-align: center;
+      }
+      .cd div {
+        background: rgba(0, 0, 0, 0.28);
+        border-radius: 14px;
+        padding: 14px 4px;
+      }
+      .cd b {
+        display: block;
+        font:
+          800 36px "Bricolage Grotesque",
+          sans-serif;
+        color: var(--gold);
+        font-variant-numeric: tabular-nums;
+      }
+      .cd small {
+        font-size: 12px;
+        color: #f0cdd2;
+      }
+      .count p {
+        margin: 16px 0 0;
+        font-size: 14px;
+        color: #f0cdd2;
+      }
+      @media (max-width: 860px) {
+        .hero .wrap {
+          grid-template-columns: 1fr;
+          padding-top: 52px;
+        }
+      }
+      /* stats */
+      .stats {
+        background: var(--gold);
+        color: #241a00;
+      }
+      .stats .wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+      }
+      .stats b {
+        font:
+          800 34px "Bricolage Grotesque",
+          sans-serif;
+        display: block;
+        line-height: 1;
+      }
+      .stats span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      @media (max-width: 700px) {
+        .stats .wrap {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      section {
+        padding: 92px 0;
+      }
+      .head {
+        max-width: 640px;
+        margin-bottom: 46px;
+      }
+      .head h2 {
+        font-size: clamp(34px, 5vw, 56px);
+        font-weight: 800;
+      }
+      .head p {
+        color: var(--mut);
+        font-size: 18px;
+        margin: 14px 0 0;
+      }
+      /* categories */
+      .cats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .cat {
+        position: relative;
+        border-radius: 28px;
+        padding: 34px 30px 30px;
+        color: #fff;
+        overflow: hidden;
+        min-height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .cat:nth-child(1) {
+        background: #0e6b57;
+      }
+      .cat:nth-child(2) {
+        background: #a3202f;
+      }
+      .cat:nth-child(3) {
+        background: #a85d00;
+      }
+      .cat .age {
+        position: absolute;
+        top: 22px;
+        left: 30px;
+        font:
+          800 120px/1 "Bricolage Grotesque",
+          sans-serif;
+        opacity: 0.2;
+        letter-spacing: -0.05em;
+      }
+      .cat .tag {
+        position: absolute;
+        top: 26px;
+        right: 26px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+        padding: 5px 14px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .cat h3 {
+        font-size: 36px;
+        font-weight: 800;
+      }
+      .cat p {
+        margin: 8px 0 18px;
+        color: rgba(255, 255, 255, 0.88);
+      }
+      .cat a {
+        align-self: flex-start;
+        background: #fff;
+        color: #111;
+        font-weight: 700;
+        border-radius: 999px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      @media (max-width: 900px) {
+        .cats {
+          grid-template-columns: 1fr;
+        }
+        .cat {
+          min-height: 260px;
+        }
+      }
+      /* timeline */
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        position: relative;
+        counter-reset: s;
+      }
+      .step {
+        position: relative;
+        padding: 0 22px 0 0;
+      }
+      .step::before {
+        counter-increment: s;
+        content: counter(s);
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--ink2);
+        color: #fff;
+        font:
+          800 20px "Bricolage Grotesque",
+          sans-serif;
+        position: relative;
+        z-index: 1;
+      }
+      .step::after {
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 48px;
+        right: 0;
+        height: 2px;
+        background: var(--line);
+      }
+      .step:last-child::after {
+        display: none;
+      }
+      .step h3 {
+        font-size: 22px;
+        margin: 18px 0 6px;
+      }
+      .step p {
+        color: var(--mut);
+        margin: 0;
+        font-size: 15px;
+      }
+      @media (max-width: 800px) {
+        .steps {
+          grid-template-columns: 1fr;
+          gap: 26px;
+        }
+        .step::after {
+          display: none;
+        }
+      }
+      /* prizes / why */
+      .why {
+        background: var(--ink);
+        color: #fff;
+      }
+      .why .head p {
+        color: #f0cdd2;
+      }
+      .feat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .feat div {
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 22px;
+        padding: 28px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .feat h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+        color: var(--gold);
+      }
+      .feat p {
+        margin: 0;
+        color: #f7dde1;
+      }
+      @media (max-width: 860px) {
+        .feat {
+          grid-template-columns: 1fr;
+        }
+      }
+      /* form */
+      .reg {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 50px;
+        align-items: start;
+      }
+      .reg aside h2 {
+        font-size: clamp(34px, 5vw, 54px);
+        font-weight: 800;
+      }
+      .reg aside p {
+        color: var(--mut);
+        font-size: 18px;
+      }
+      .reg aside ul {
+        padding-left: 20px;
+        color: var(--mut);
+      }
+      form,
+      .done {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 34px;
+        box-shadow: 0 24px 60px rgba(94, 15, 28, 0.12);
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+      input,
+      select {
+        display: block;
+        width: 100%;
+        margin-top: 6px;
+        padding: 13px 14px;
+        border-radius: 12px;
+        border: 1.5px solid var(--line);
+        background: var(--bg);
+        color: var(--tx);
+        font:
+          16px "DM Sans",
+          sans-serif;
+      }
+      input:focus,
+      select:focus {
+        outline: none;
+        border-color: var(--ink2);
+        box-shadow: 0 0 0 4px rgba(179, 38, 47, 0.2);
+      }
+      .err {
+        color: #d6335a;
+        font-size: 13px;
+        font-weight: 500;
+        min-height: 0;
+        display: block;
+        margin-top: 4px;
+      }
+      .hint {
+        display: block;
+        margin-top: 6px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ok);
+      }
+      form .btn {
+        width: 100%;
+        background: var(--ink2);
+        color: #fff;
+        padding: 16px;
+        font-size: 17px;
+      }
+      .done {
+        text-align: center;
+        display: none;
+      }
+      .done .tick {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: var(--ok);
+        color: #fff;
+        font-size: 38px;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 16px;
+      }
+      .done h3 {
+        font-size: 30px;
+      }
+      .done code {
+        background: var(--bg);
+        padding: 6px 14px;
+        border-radius: 10px;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 10px;
+      }
+      @media (max-width: 900px) {
+        .reg {
+          grid-template-columns: 1fr;
+        }
+        .row {
+          grid-template-columns: 1fr;
+        }
+      }
+      /* faq */
+      details {
+        border-bottom: 1px solid var(--line);
+        padding: 20px 0;
+      }
+      summary {
+        cursor: pointer;
+        font:
+          700 20px "Bricolage Grotesque",
+          sans-serif;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      summary::after {
+        content: "+";
+        font-size: 28px;
+        line-height: 1;
+        color: var(--ink2);
+        transition: transform 0.2s;
+      }
+      details[open] summary::after {
+        transform: rotate(45deg);
+      }
+      details p {
+        color: var(--mut);
+        margin: 12px 0 0;
+        max-width: 720px;
+      }
+      footer {
+        background: #3a0911;
+        color: #d9aab2;
+        padding: 44px 0;
+        font-size: 14px;
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      footer b {
+        color: #fff;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      /* v2 */
+      .hascur,
+      .hascur a,
+      .hascur button,
+      .hascur summary,
+      .hascur .cat {
+        cursor: none;
+      }
+      #cur,
+      #curd {
+        position: fixed;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        z-index: 99;
+        opacity: 0;
+        display: none;
+      }
+      .hascur #cur,
+      .hascur #curd {
+        display: block;
+      }
+      #cur {
+        width: 44px;
+        height: 44px;
+        margin: -22px 0 0 -22px;
+        border: 2px solid var(--gold);
+        border-radius: 50%;
+        transition:
+          width 0.25s,
+          height 0.25s,
+          margin 0.25s,
+          background 0.25s;
+        display: grid;
+        place-items: center;
+        font:
+          700 11px "DM Sans",
+          sans-serif;
+        color: #241a00;
+        mix-blend-mode: normal;
+      }
+      #cur.big {
+        width: 84px;
+        height: 84px;
+        margin: -42px 0 0 -42px;
+        background: var(--gold);
+      }
+      #cur::after {
+        content: attr(data-t);
+      }
+      #curd {
+        width: 8px;
+        height: 8px;
+        margin: -4px 0 0 -4px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 0 1.5px var(--ink2);
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          520px circle at var(--mx, 70%) var(--my, 30%),
+          rgba(255, 200, 61, 0.2),
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .hero .wrap {
+        position: relative;
+        z-index: 1;
+      }
+      .rcol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+      .medalwrap {
+        width: 190px;
+        margin-bottom: -34px;
+        position: relative;
+        z-index: 2;
+        transform: perspective(700px) rotateX(var(--rx, 0deg))
+          rotateY(var(--ry, 0deg));
+        transition: transform 0.2s;
+        transform-origin: 50% 0;
+      }
+      .medalwrap svg {
+        width: 100%;
+        display: block;
+        filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.45));
+        animation: swing 5s ease-in-out infinite;
+        transform-origin: 50% 0;
+      }
+      @keyframes swing {
+        0%,
+        100% {
+          transform: rotate(-3deg);
+        }
+        50% {
+          transform: rotate(3deg);
+        }
+      }
+      .rcol .count {
+        width: 100%;
+        padding-top: 48px;
+      }
+      .logo svg {
+        width: 36px;
+        height: 36px;
+      }
+      .tilt {
+        position: relative;
+        transform-style: preserve-3d;
+        transition:
+          transform 0.18s ease-out,
+          box-shadow 0.25s;
+        will-change: transform;
+      }
+      .glare {
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        background: radial-gradient(
+          260px circle at var(--gx, 50%) var(--gy, 0%),
+          rgba(255, 255, 255, 0.28),
+          transparent 60%
+        );
+        opacity: 0;
+        transition: opacity 0.25s;
+      }
+      .tilt:hover .glare {
+        opacity: 1;
+      }
+      .cat {
+        box-shadow: 0 24px 50px rgba(94, 15, 28, 0.28);
+        transition:
+          transform 0.18s ease-out,
+          box-shadow 0.3s,
+          opacity 0.3s,
+          filter 0.3s;
+      }
+      .cats.sel .cat:not(.on) {
+        opacity: 0.5;
+        filter: saturate(0.5);
+      }
+      .cat.on {
+        box-shadow:
+          0 0 0 4px var(--gold),
+          0 30px 60px rgba(94, 15, 28, 0.4);
+      }
+      .feat div {
+        overflow: hidden;
+      }
+      .finder {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 26px 30px;
+        margin-bottom: 26px;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 30px;
+        align-items: center;
+      }
+      .finder p {
+        margin: 0;
+        font:
+          700 26px "Bricolage Grotesque",
+          sans-serif;
+        line-height: 1.2;
+      }
+      .finder p b {
+        color: var(--ink2);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) .finder p b {
+          color: var(--gold);
+        }
+      }
+      .finder small {
+        display: block;
+        color: var(--mut);
+        font-size: 14px;
+        margin-top: 6px;
+        font-weight: 500;
+      }
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 99px;
+        margin: 0;
+        background: linear-gradient(
+          90deg,
+          var(--gold) var(--p, 40%),
+          var(--line) 0
+        );
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: var(--gold);
+        border: 4px solid var(--ink2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      input[type="range"]::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--gold);
+        border: 4px solid var(--ink2);
+      }
+      @media (max-width: 760px) {
+        .finder {
+          grid-template-columns: 1fr;
+        }
+        .rings {
+          display: none;
+        }
+      }
+
+      /* v3 */
+      #prog {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background: var(--gold);
+        z-index: 60;
+      }
+      .nr {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .tg,
+      .mb {
+        background: rgba(255, 255, 255, 0.14);
+        border: 0;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .mb {
+        display: none;
+      }
+      nav ul a.act {
+        color: var(--gold);
+        opacity: 1;
+      }
+      @media (max-width: 760px) {
+        .mb {
+          display: block;
+        }
+        nav ul.open {
+          display: flex;
+          position: absolute;
+          top: 64px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          background: var(--ink);
+          padding: 20px 22px;
+          gap: 16px;
+        }
+      }
+      #pc {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .hero h1 {
+        animation: rise 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      }
+      .hero .lead {
+        animation: rise 1s 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      }
+      .hero .cta {
+        animation: rise 1s 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(36px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .mq {
+        overflow: hidden;
+        background: var(--ink);
+        color: #f0cdd2;
+        padding: 16px 0;
+        white-space: nowrap;
+      }
+      .mt {
+        display: inline-block;
+        animation: mq 32s linear infinite;
+      }
+      .mq:hover .mt {
+        animation-play-state: paused;
+      }
+      .mt span {
+        margin: 0 22px;
+        font:
+          700 18px "Bricolage Grotesque",
+          sans-serif;
+      }
+      .mt span::after {
+        content: "✦";
+        color: var(--gold);
+        margin-left: 44px;
+      }
+      @keyframes mq {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      .tabs {
+        display: inline-flex;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px;
+        margin-bottom: 30px;
+        gap: 4px;
+      }
+      .tabs button {
+        border: 0;
+        background: none;
+        color: var(--mut);
+        font:
+          700 15px "DM Sans",
+          sans-serif;
+        padding: 11px 24px;
+        border-radius: 999px;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .tabs button[aria-selected="true"] {
+        background: var(--ink2);
+        color: #fff;
+      }
+      .tp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: end;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 34px;
+      }
+      #rules {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 16px;
+      }
+      #rules li {
+        padding-left: 36px;
+        position: relative;
+        font-size: 17px;
+      }
+      #rules li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--ok);
+        color: #fff;
+        font-size: 13px;
+        display: grid;
+        place-items: center;
+      }
+      .pod {
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+        height: 250px;
+      }
+      .pod div {
+        flex: 1;
+        border-radius: 16px 16px 0 0;
+        padding-top: 16px;
+        color: #241a00;
+        font-weight: 800;
+        transition: height 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .pod span {
+        display: block;
+        text-align: center;
+      }
+      .pod .pv {
+        font:
+          800 22px "Bricolage Grotesque",
+          sans-serif;
+      }
+      .g1 {
+        background: linear-gradient(#ffe083, #ffc83d);
+        height: 100%;
+      }
+      .g2 {
+        background: linear-gradient(#eef1fb, #aeb6d3);
+        height: 72%;
+      }
+      .g3 {
+        background: linear-gradient(#f6c79a, #c07a3a);
+        height: 54%;
+      }
+      @media (max-width: 800px) {
+        .tp {
+          grid-template-columns: 1fr;
+        }
+      }
+      .fp {
+        height: 8px;
+        border-radius: 9px;
+        background: var(--line);
+        overflow: hidden;
+      }
+      .fp i {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, var(--gold), #ff9d2e);
+        transition: width 0.3s;
+      }
+      #fpt {
+        display: block;
+        font-size: 13px;
+        color: var(--mut);
+        margin: 8px 0 22px;
+        font-weight: 500;
+      }
+      .shake {
+        animation: sh 0.4s;
+      }
+      @keyframes sh {
+        20%,
+        60% {
+          transform: translateX(-8px);
+        }
+        40%,
+        80% {
+          transform: translateX(8px);
+        }
+      }
+      .pass {
+        margin-top: 26px;
+        border-radius: 22px;
+        padding: 22px;
+        color: #fff;
+        background: var(--ink2);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(94, 15, 28, 0.35);
+        max-width: 340px;
+        transition: box-shadow 0.4s;
+      }
+      .pass::before,
+      .pass::after {
+        content: "";
+        position: absolute;
+        top: 128px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--bg);
+      }
+      .pass::before {
+        left: -12px;
+      }
+      .pass::after {
+        right: -12px;
+      }
+      .ph {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font:
+          800 16px "Bricolage Grotesque",
+          sans-serif;
+      }
+      .ph svg {
+        width: 30px;
+        height: 30px;
+      }
+      .pn {
+        font:
+          800 26px "Bricolage Grotesque",
+          sans-serif;
+        margin: 22px 0 4px;
+        word-break: break-word;
+        min-height: 30px;
+      }
+      .pm {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        color: #f0cdd2;
+        font-size: 14px;
+        border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
+        padding-bottom: 20px;
+      }
+      .pf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+      }
+      #pqr {
+        width: 58px;
+        height: 58px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1px;
+        background: #fff;
+        padding: 3px;
+        border-radius: 6px;
+      }
+      #pqr i.on {
+        background: #5e0f1c;
+      }
+      #pidd {
+        font: 700 15px monospace;
+        color: var(--gold);
+      }
+      .pass.ok {
+        box-shadow:
+          0 0 0 3px var(--gold),
+          0 24px 50px rgba(255, 200, 61, 0.35);
+      }
+      .stk {
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+        z-index: 30;
+        text-align: center;
+        display: none;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+      @media (max-width: 760px) {
+        .stk {
+          display: block;
+        }
+        .stk.hide {
+          display: none;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+        }
+      }
+
+      /* v4 */
+      body.lock {
+        overflow: hidden;
+      }
+      body:not(.go) .hero h1,
+      body:not(.go) .hero .lead,
+      body:not(.go) .hero .cta {
+        animation-play-state: paused;
+      }
+      #intro {
+        position: fixed;
+        inset: 0;
+        z-index: 200;
+        background: var(--ink);
+        display: grid;
+        place-items: center;
+        color: #fff;
+        cursor: pointer;
+        transition: transform 0.9s cubic-bezier(0.77, 0, 0.18, 1);
+      }
+      #intro.out {
+        transform: translateY(-100%);
+      }
+      .ib {
+        text-align: center;
+        width: min(300px, 70vw);
+      }
+      .ib svg {
+        width: 112px;
+        animation: spin 1.6s cubic-bezier(0.5, 0, 0.2, 1) both;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(-200deg) scale(0.4);
+          opacity: 0;
+        }
+        to {
+          transform: none;
+          opacity: 1;
+        }
+      }
+      .ib p {
+        font:
+          700 15px "DM Sans",
+          sans-serif;
+        color: #f0cdd2;
+        margin: 18px 0 14px;
+      }
+      .ibar {
+        height: 3px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .ibar i {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: var(--gold);
+      }
+      #ipc {
+        font:
+          800 44px "Bricolage Grotesque",
+          sans-serif;
+        color: var(--gold);
+        display: block;
+        margin-top: 12px;
+        font-variant-numeric: tabular-nums;
+      }
+      .ann {
+        background: var(--gold);
+        color: #241a00;
+        text-align: center;
+        font:
+          700 14px "DM Sans",
+          sans-serif;
+        padding: 9px 12px;
+      }
+      .ann a {
+        text-decoration: none;
+      }
+      .close {
+        background: var(--ink);
+        color: #fff;
+        padding: 88px 0;
+      }
+      .close .wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        align-items: center;
+      }
+      .close h2 {
+        font-size: clamp(34px, 5vw, 56px);
+        font-weight: 800;
+      }
+      .close .s {
+        color: #f0cdd2;
+        font-size: 18px;
+        margin: 14px 0 28px;
+        max-width: 460px;
+      }
+      .br {
+        margin-bottom: 26px;
+      }
+      .br p {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 0 0 8px;
+        color: #f0cdd2;
+        font-size: 15px;
+      }
+      .br b {
+        color: #fff;
+        font:
+          700 20px "Bricolage Grotesque",
+          sans-serif;
+      }
+      .tr {
+        height: 12px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+      }
+      .tr i {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: var(--gold);
+        border-radius: 9px;
+        transition: width 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      #bars.in .tr i {
+        width: var(--w);
+      }
+      @media (max-width: 860px) {
+        .close .wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+      .md {
+        position: fixed;
+        inset: 0;
+        z-index: 150;
+        background: rgba(30, 5, 10, 0.72);
+        backdrop-filter: blur(6px);
+        display: grid;
+        place-items: center;
+        padding: 20px;
+      }
+      .md[hidden] {
+        display: none;
+      }
+      .mc {
+        position: relative;
+        background: var(--card);
+        color: var(--tx);
+        border-radius: 28px;
+        padding: 38px 34px 28px;
+        max-width: 540px;
+        width: 100%;
+        animation: rise 0.5s both;
+      }
+      .x {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        border: 0;
+        background: var(--line);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        color: var(--tx);
+      }
+      .mc h3 {
+        font-size: 34px;
+      }
+      .mc p {
+        color: var(--mut);
+        margin: 10px 0 0;
+      }
+      .mo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 22px 0 14px;
+      }
+      .mo button {
+        border: 2px solid var(--line);
+        background: var(--bg);
+        border-radius: 18px;
+        padding: 18px 8px;
+        cursor: pointer;
+        color: var(--tx);
+        font: inherit;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+      .mo button:hover {
+        border-color: var(--gold);
+        transform: translateY(-3px);
+      }
+      .mo b {
+        display: block;
+        font:
+          800 20px "Bricolage Grotesque",
+          sans-serif;
+      }
+      .mo small {
+        color: var(--mut);
+      }
+      .nn {
+        border: 0;
+        background: none;
+        color: var(--mut);
+        cursor: pointer;
+        text-decoration: underline;
+        font: inherit;
+        font-size: 14px;
+      }
+      @media (max-width: 480px) {
+        .mo {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="lock">
+    <noscript
+      ><style>
+        #intro {
+          display: none;
+        }
+        body.lock {
+          overflow: auto;
+        }
+        body:not(.go) .hero h1,
+        body:not(.go) .hero .lead,
+        body:not(.go) .hero .cta {
+          animation-play-state: running;
+        }
+      </style></noscript
+    >
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#fff2b8" />
+          <stop offset=".4" stop-color="#ffc83d" />
+          <stop offset=".75" stop-color="#c98a00" />
+          <stop offset="1" stop-color="#ffe083" />
+        </linearGradient>
+        <linearGradient id="nb" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#b3262f" />
+          <stop offset="1" stop-color="#5e0f1c" />
+        </linearGradient>
+        <symbol id="emb" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="58" fill="url(#gg)" />
+          <circle cx="60" cy="60" r="50" fill="url(#nb)" />
+          <circle
+            cx="60"
+            cy="60"
+            r="45"
+            fill="none"
+            stroke="url(#gg)"
+            stroke-width="1.6"
+            stroke-dasharray="2 3.4"
+          />
+          <path
+            d="M60 18c4 14 22 22 22 42a22 22 0 0 1-44 0c0-10 5-17 11-23 1 7 4 11 8 12-3-11-1-21 3-31z"
+            fill="url(#gg)"
+          />
+          <path
+            d="M60 52c3 7 10 11 10 19a10 10 0 0 1-20 0c0-5 3-8 6-11 0 3 1 5 3 6-1-5 0-9 1-14z"
+            fill="#5e0f1c"
+          />
+          <text
+            x="60"
+            y="100"
+            text-anchor="middle"
+            font-family="Bricolage Grotesque,sans-serif"
+            font-weight="800"
+            font-size="15"
+            fill="url(#gg)"
+          >
+            TN
+          </text>
+        </symbol>
+      </defs>
+    </svg>
+    <div id="intro" aria-hidden="true">
+      <div class="ib">
+        <svg viewBox="0 0 120 120"><use href="#emb" /></svg>
+        <p>Tamil Nadu State Championship 2026</p>
+        <div class="ibar"><i id="ibi"></i></div>
+        <b id="ipc">0</b>
+      </div>
+    </div>
+    <div
+      id="md"
+      class="md"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="mdt"
+      hidden
+    >
+      <div class="mc">
+        <button class="x" id="mx" aria-label="Close">×</button>
+        <h3 id="mdt">Which category are you?</h3>
+        <p>
+          Pick yours and we will take you to a form that is already filled in
+          with it. It takes under two minutes.
+        </p>
+        <div class="mo">
+          <button data-c="Primary">
+            <b>Primary</b><small>Age 6 to 14</small></button
+          ><button data-c="Medium">
+            <b>Medium</b><small>Age 15 to 24</small></button
+          ><button data-c="Open"><b>Open</b><small>Age 25 to 34</small></button>
+        </div>
+        <button class="nn" id="mn">Not now</button>
+      </div>
+    </div>
+    <div id="cur"></div>
+    <div id="curd"></div>
+    <div id="prog"></div>
+    <a class="btn stk" id="stk" href="#register">Register free</a>
+    <div class="ann">
+      <a href="#register"
+        >Registration closes 30 Nov 2026. <span id="dl">--</span> days left.
+        Register free</a
+      >
+    </div>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="#top" aria-label="TN Championship home"
+          ><svg viewBox="0 0 120 120"><use href="#emb" /></svg>TN
+          Championship</a
+        >
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#prizes">Prizes</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nr">
+          <button class="tg" id="th" aria-label="Switch light or dark theme">
+            ◐</button
+          ><a class="btn" href="#register">Register</a
+          ><button class="mb" id="mb" aria-label="Menu">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <canvas id="pc" aria-hidden="true"></canvas>
+      <svg
+        class="rings"
+        viewBox="0 0 200 200"
+        fill="none"
+        stroke="#fff"
+        stroke-width="6"
+        aria-hidden="true"
+      >
+        <circle cx="100" cy="100" r="92" />
+        <circle cx="100" cy="100" r="66" />
+        <circle cx="100" cy="100" r="40" />
+        <circle cx="100" cy="100" r="14" />
+      </svg>
+      <div class="wrap">
+        <div>
+          <h1>Tamil Nadu<span>State Championship</span>2026</h1>
+          <p class="lead">
+            One stage for every age. Compete in your district, qualify for the
+            state finals, and take the title home.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#register">Register now</a
+            ><a class="btn ghost" href="#categories">Find your category</a>
+          </div>
+        </div>
+        <div class="rcol">
+          <div class="medalwrap" id="medal">
+            <svg viewBox="0 0 140 215">
+              <path d="M32 0h26l22 92H54z" fill="#8f1d2c" />
+              <path d="M82 0h26L86 92H60z" fill="#ffc83d" />
+              <path d="M58 0h24l-6 92H64z" fill="#fff" opacity=".9" />
+              <use href="#emb" x="10" y="80" width="120" height="120" />
+              <ellipse
+                cx="48"
+                cy="118"
+                rx="26"
+                ry="12"
+                fill="#fff"
+                opacity=".18"
+                transform="rotate(-30 48 118)"
+              />
+            </svg>
+          </div>
+          <div class="count">
+            <h3>Registration closes in</h3>
+            <div class="cd" id="cd">
+              <div><b>--</b><small>Days</small></div>
+              <div><b>--</b><small>Hours</small></div>
+              <div><b>--</b><small>Mins</small></div>
+              <div><b>--</b><small>Secs</small></div>
+            </div>
+            <p>Closes 30 Nov 2026 · State finals 20 Dec 2026</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="wrap">
+        <div><b data-n="38">38</b><span>Districts taking part</span></div>
+        <div><b>3</b><span>Age categories</span></div>
+        <div>
+          <b data-n="10000" data-s="+">10,000+</b
+          ><span>Expected participants</span>
+        </div>
+        <div><b>Free</b><span>Entry for all</span></div>
+      </div>
+    </div>
+
+    <div class="mq" aria-label="Participating districts">
+      <div class="mt" id="mt">
+        <span>Chennai</span><span>Coimbatore</span><span>Madurai</span
+        ><span>Tiruchirappalli</span><span>Salem</span><span>Tirunelveli</span
+        ><span>Thoothukudi</span><span>Erode</span><span>Vellore</span
+        ><span>Kanniyakumari</span><span>and 28 more districts</span>
+      </div>
+    </div>
+    <section id="categories">
+      <div class="wrap">
+        <div class="head">
+          <h2>Pick your category</h2>
+          <p>
+            Your category is decided by your age on 1 December 2026. Each one
+            has its own rounds and its own champion.
+          </p>
+        </div>
+        <div class="finder">
+          <div>
+            <p id="ageout"></p>
+            <small>Age counted on 1 December 2026</small>
+          </div>
+          <input
+            type="range"
+            id="age"
+            min="6"
+            max="34"
+            value="18"
+            aria-label="Your age"
+          />
+        </div>
+        <div class="cats">
+          <article class="cat">
+            <span class="age">6</span><span class="tag">Age 6–14</span>
+            <h3>Primary</h3>
+            <p>For young talent taking a first step onto a state stage.</p>
+            <a href="#register" data-cat="Primary">Register in Primary</a>
+          </article>
+          <article class="cat">
+            <span class="age">15</span><span class="tag">Age 15–24</span>
+            <h3>Medium</h3>
+            <p>For school and college students ready to compete seriously.</p>
+            <a href="#register" data-cat="Medium">Register in Medium</a>
+          </article>
+          <article class="cat">
+            <span class="age">35</span><span class="tag">Under 35</span>
+            <h3>Open</h3>
+            <p>For young professionals and adults aged 25 to 34.</p>
+            <a href="#register" data-cat="Open">Register in Open</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="prizes" style="padding-top: 0">
+      <div class="wrap">
+        <div class="head">
+          <h2>What you can win</h2>
+          <p>
+            Choose a category to see its rules and prizes. Every finalist
+            receives a certificate.
+          </p>
+        </div>
+        <div class="tabs" role="tablist">
+          <button role="tab" data-t="Primary">Primary</button
+          ><button role="tab" data-t="Medium">Medium</button
+          ><button role="tab" data-t="Open">Open</button>
+        </div>
+        <div class="tp">
+          <ul id="rules"></ul>
+          <div class="pod">
+            <div class="g2"><span>2nd</span><span class="pv"></span></div>
+            <div class="g1"><span>1st</span><span class="pv"></span></div>
+            <div class="g3"><span>3rd</span><span class="pv"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" style="padding-top: 0">
+      <div class="wrap">
+        <div class="head">
+          <h2>From sign-up to the finals</h2>
+          <p>Four steps. Registration takes under two minutes.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Register</h3>
+            <p>Fill in the online form and choose your category.</p>
+          </div>
+          <div class="step">
+            <h3>Get verified</h3>
+            <p>Confirm your age proof by SMS within 48 hours.</p>
+          </div>
+          <div class="step">
+            <h3>District round</h3>
+            <p>Compete at your nearest district venue in December.</p>
+          </div>
+          <div class="step">
+            <h3>State finals</h3>
+            <p>Top performers from each district meet in Chennai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="wrap">
+        <div class="head">
+          <h2>Why compete</h2>
+          <p>More than a trophy. A state-level record that stays with you.</p>
+        </div>
+        <div class="feat">
+          <div>
+            <h3>State recognition</h3>
+            <p>
+              Winners receive official certificates and medals from the state
+              organising committee.
+            </p>
+          </div>
+          <div>
+            <h3>Fair for every age</h3>
+            <p>
+              You only compete against people in your own age group, with rules
+              set for that group.
+            </p>
+          </div>
+          <div>
+            <h3>Close to home</h3>
+            <p>District rounds mean no long travel before the finals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="register">
+      <div class="wrap reg">
+        <aside>
+          <h2>Reserve your place</h2>
+          <p>Registration is free. Keep your date of birth ready.</p>
+          <ul>
+            <li>One registration per participant</li>
+            <li>Parent or guardian number needed for Primary</li>
+            <li>You will receive a confirmation ID instantly</li>
+          </ul>
+          <div class="pass" id="pass" aria-label="Your entry pass preview">
+            <div class="ph">
+              <svg viewBox="0 0 120 120"><use href="#emb" /></svg>Entry pass ·
+              2026
+            </div>
+            <div class="pn" id="pn">Your name</div>
+            <div class="pm">
+              <span id="pcat">Category</span><span id="pdis">District</span>
+            </div>
+            <div class="pf">
+              <div id="pqr"></div>
+              <span id="pidd">TNC26-·····</span>
+            </div>
+          </div>
+        </aside>
+        <div>
+          <form id="f" novalidate>
+            <div class="fp"><i id="fpb"></i></div>
+            <span id="fpt">0 of 6 fields complete</span>
+            <label
+              >Full name<input
+                id="name"
+                autocomplete="name"
+                placeholder="As on your ID" /><span class="err"></span
+            ></label>
+            <div class="row">
+              <label
+                >Date of birth<input id="dob" type="date" /><span
+                  class="err"
+                ></span
+                ><span class="hint" id="auto" hidden></span
+              ></label>
+              <label
+                >Category<select id="cat">
+                  <option value="">Select</option>
+                  <option>Primary</option>
+                  <option>Medium</option>
+                  <option>Open</option></select
+                ><span class="err"></span
+              ></label>
+            </div>
+            <div class="row">
+              <label
+                >Mobile number<input
+                  id="ph"
+                  type="tel"
+                  inputmode="numeric"
+                  maxlength="10"
+                  placeholder="10-digit number"
+                  autocomplete="tel" /><span class="err"></span
+              ></label>
+              <label
+                >Email<input
+                  id="em"
+                  type="email"
+                  placeholder="you@example.com"
+                  autocomplete="email" /><span class="err"></span
+              ></label>
+            </div>
+            <label
+              >District<select id="dist">
+                <option value="">Select district</option>
+                <option>Chennai</option>
+                <option>Coimbatore</option>
+                <option>Madurai</option>
+                <option>Tiruchirappalli</option>
+                <option>Salem</option>
+                <option>Tirunelveli</option>
+                <option>Thoothukudi</option>
+                <option>Erode</option>
+                <option>Vellore</option>
+                <option>Other district</option></select
+              ><span class="err"></span
+            ></label>
+            <button class="btn" type="submit">Complete registration</button>
+          </form>
+          <div class="done" id="done">
+            <div class="tick">✓</div>
+            <h3>You are registered</h3>
+            <p id="dmsg"></p>
+            <code id="rid"></code>
+            <p><a href="#top">Back to top</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="close" id="seats">
+      <div class="wrap">
+        <div>
+          <h2>Seats are limited in every district</h2>
+          <p class="s">
+            When a category fills up, registration for it closes early. Secure
+            your place while it is open.
+          </p>
+          <a class="btn" href="#register">Claim your seat</a>
+        </div>
+        <div id="bars">
+          <div class="br">
+            <p><b>Primary</b><span>3,120 of 4,000 booked</span></p>
+            <div class="tr"><i style="--w: 78%"></i></div>
+          </div>
+          <div class="br">
+            <p><b>Medium</b><span>3,640 of 4,000 booked</span></p>
+            <div class="tr"><i style="--w: 91%"></i></div>
+          </div>
+          <div class="br">
+            <p><b>Open</b><span>2,250 of 3,500 booked</span></p>
+            <div class="tr"><i style="--w: 64%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="padding-top: 0">
+      <div class="wrap">
+        <div class="head"><h2>Questions</h2></div>
+        <details>
+          <summary>Who can take part?</summary>
+          <p>Any resident of Tamil Nadu aged 6 to 34 on 1 December 2026.</p>
+        </details>
+        <details>
+          <summary>What if my age fits two categories?</summary>
+          <p>
+            Your category follows your age on 1 December 2026. The form suggests
+            it when you enter your date of birth.
+          </p>
+        </details>
+        <details>
+          <summary>What documents do I need?</summary>
+          <p>
+            An age proof such as an Aadhaar card, school ID or birth
+            certificate, shown at your district round.
+          </p>
+        </details>
+        <details>
+          <summary>Is there a fee?</summary>
+          <p>No. Registration and participation are free.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div>
+          <b>Tamil Nadu State Championship 2026</b><br />Organised by the State
+          Organising Committee
+        </div>
+        <div>help@tnchampionship.example<br />Helpline: 1800-000-0000</div>
+        <div><b>Subash Muthu B</b><br />6380194475<br />IV year CSE</div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var end = new Date("2026-11-30T23:59:59+05:30").getTime(),
+          cd = document.querySelectorAll("#cd b");
+        function tick() {
+          var d = Math.max(0, end - Date.now()),
+            v = [
+              Math.floor(d / 864e5),
+              Math.floor(d / 36e5) % 24,
+              Math.floor(d / 6e4) % 60,
+              Math.floor(d / 1e3) % 60,
+            ];
+          cd.forEach(function (e, i) {
+            e.textContent = String(v[i]).padStart(2, "0");
+          });
+        }
+        tick();
+        setInterval(tick, 1000);
+        var $ = function (i) {
+          return document.getElementById(i);
+        };
+        function catFor(dob) {
+          var ref = new Date("2026-12-01"),
+            b = new Date(dob),
+            a = ref.getFullYear() - b.getFullYear();
+          var m = ref.getMonth() - b.getMonth();
+          if (m < 0 || (m === 0 && ref.getDate() < b.getDate())) a--;
+          return a >= 6 && a <= 14
+            ? "Primary"
+            : a >= 15 && a <= 24
+              ? "Medium"
+              : a >= 25 && a <= 34
+                ? "Open"
+                : null;
+        }
+        document.querySelectorAll("[data-cat]").forEach(function (a) {
+          a.addEventListener("click", function () {
+            $("cat").value = a.dataset.cat;
+          });
+        });
+        $("dob").addEventListener("change", function () {
+          var c = this.value && catFor(this.value),
+            h = $("auto");
+          if (c) {
+            $("cat").value = c;
+            h.hidden = false;
+            h.textContent = "Your category: " + c;
+          } else {
+            h.hidden = false;
+            h.style.color = "#d6335a";
+            h.textContent = this.value
+              ? "Age must be 6 to 34 on 1 Dec 2026"
+              : "";
+            return;
+          }
+          h.style.color = "";
+        });
+        $("f").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var ok = true;
+          function chk(id, test, msg) {
+            var el = $(id),
+              s = el.parentNode.querySelector(".err");
+            var bad = !test(el.value.trim());
+            s.textContent = bad ? msg : "";
+            if (bad) ok = false;
+          }
+          chk(
+            "name",
+            function (v) {
+              return v.length > 2;
+            },
+            "Enter your full name",
+          );
+          chk(
+            "dob",
+            function (v) {
+              return v && catFor(v);
+            },
+            "Enter a valid date of birth (age 6 to 34)",
+          );
+          chk(
+            "cat",
+            function (v) {
+              return v;
+            },
+            "Select a category",
+          );
+          chk(
+            "ph",
+            function (v) {
+              return /^[6-9]\d{9}$/.test(v);
+            },
+            "Enter a valid 10-digit mobile number",
+          );
+          chk(
+            "em",
+            function (v) {
+              return /^\S+@\S+\.\S+$/.test(v);
+            },
+            "Enter a valid email address",
+          );
+          chk(
+            "dist",
+            function (v) {
+              return v;
+            },
+            "Select your district",
+          );
+          if (!ok) {
+            var b = document.querySelector(".err:not(:empty)");
+            if (b) b.parentNode.querySelector("input,select").focus();
+            var f = $("f");
+            f.classList.remove("shake");
+            void f.offsetWidth;
+            f.classList.add("shake");
+            return;
+          }
+          var id = "TNC26-" + Math.floor(10000 + Math.random() * 89999);
+          $("rid").textContent = id;
+          $("dmsg").textContent =
+            "Thank you, " +
+            $("name").value.trim() +
+            ". You are registered in the " +
+            $("cat").value +
+            " category. Keep this ID safe.";
+          $("pidd").textContent = id;
+          $("pass").classList.add("ok");
+          $("f").style.display = "none";
+          $("done").style.display = "block";
+        });
+
+        var fine = matchMedia("(hover:hover) and (pointer:fine)").matches,
+          rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
+        var io = new IntersectionObserver(
+          function (es) {
+            es.forEach(function (x) {
+              if (!x.isIntersecting) return;
+              io.unobserve(x.target);
+              var el = x.target,
+                n = +el.dataset.n,
+                t0 = performance.now();
+              (function f(t) {
+                var p = Math.min(1, (t - t0) / 1400),
+                  e = 1 - Math.pow(1 - p, 3);
+                el.textContent =
+                  Math.round(n * e).toLocaleString("en-IN") +
+                  (el.dataset.s || "");
+                if (p < 1) requestAnimationFrame(f);
+              })(t0);
+            });
+          },
+          { threshold: 0.6 },
+        );
+        document.querySelectorAll("[data-n]").forEach(function (e) {
+          io.observe(e);
+        });
+        var cards = document.querySelectorAll(".cat"),
+          cw = document.querySelector(".cats"),
+          ag = $("age");
+        function fa(user) {
+          var a = +ag.value,
+            i = a <= 14 ? 0 : a <= 24 ? 1 : 2,
+            n = ["Primary", "Medium", "Open"][i];
+          $("ageout").innerHTML =
+            "Age <b>" + a + "</b> competes in <b>" + n + "</b>";
+          ag.style.setProperty("--p", ((a - 6) / 28) * 100 + "%");
+          if (user === true) {
+            cw.classList.add("sel");
+            cards.forEach(function (c, j) {
+              c.classList.toggle("on", j === i);
+            });
+          }
+        }
+        ag.addEventListener("input", function () {
+          fa(true);
+        });
+        fa();
+        var T = {
+          name: function (v) {
+            return v.length > 2;
+          },
+          dob: function (v) {
+            return v && catFor(v);
+          },
+          cat: function (v) {
+            return v;
+          },
+          ph: function (v) {
+            return /^[6-9]\d{9}$/.test(v);
+          },
+          em: function (v) {
+            return /^\S+@\S+\.\S+$/.test(v);
+          },
+          dist: function (v) {
+            return v;
+          },
+        };
+        function qr(t) {
+          var h = 0,
+            o = "";
+          for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0;
+          for (var j = 0; j < 49; j++) {
+            h = (h * 1103515245 + 12345) | 0;
+            o += "<i" + ((h >> 16) & 1 ? ' class="on"' : "") + "></i>";
+          }
+          $("pqr").innerHTML = o;
+        }
+        function up() {
+          var n = 0;
+          for (var k in T) if (T[k]($(k).value.trim())) n++;
+          $("fpb").style.width = (n / 6) * 100 + "%";
+          $("fpt").textContent = n + " of 6 fields complete";
+          $("pn").textContent = $("name").value.trim() || "Your name";
+          $("pcat").textContent = $("cat").value || "Category";
+          $("pdis").textContent = $("dist").value || "District";
+          qr($("name").value + $("dob").value + $("ph").value);
+        }
+        ["input", "change"].forEach(function (v) {
+          $("f").addEventListener(v, up);
+        });
+        up();
+        var D = {
+            Primary: {
+              p: ["₹10,000", "₹7,000", "₹5,000"],
+              l: [
+                "Open to ages 6 to 14",
+                "A parent or guardian must accompany the participant",
+                "Two rounds: district, then the state finals",
+                "Bring a school ID or birth certificate",
+              ],
+            },
+            Medium: {
+              p: ["₹25,000", "₹15,000", "₹10,000"],
+              l: [
+                "Open to ages 15 to 24",
+                "Individual entry for school and college students",
+                "Two rounds: district, then the state finals",
+                "Bring a school or college ID",
+              ],
+            },
+            Open: {
+              p: ["₹50,000", "₹30,000", "₹20,000"],
+              l: [
+                "Open to ages 25 to 34",
+                "Individual entry",
+                "Two rounds: district, then the state finals",
+                "Bring an Aadhaar card or other age proof",
+              ],
+            },
+          },
+          tb = document.querySelectorAll(".tabs button"),
+          pv = document.querySelectorAll(".pod .pv"),
+          pd = document.querySelectorAll(".pod div");
+        function tab(k) {
+          tb.forEach(function (b) {
+            b.setAttribute("aria-selected", b.dataset.t === k);
+          });
+          $("rules").innerHTML = D[k].l
+            .map(function (t) {
+              return "<li>" + t + "</li>";
+            })
+            .join("");
+          pv.forEach(function (e, i) {
+            e.textContent = D[k].p[[1, 0, 2][i]];
+          });
+          pd.forEach(function (q) {
+            q.style.height = "18%";
+          });
+          setTimeout(function () {
+            pd.forEach(function (q) {
+              q.style.height = "";
+            });
+          }, 40);
+        }
+        tb.forEach(function (b) {
+          b.onclick = function () {
+            tab(b.dataset.t);
+          };
+        });
+        tab("Medium");
+        var mt = $("mt");
+        mt.innerHTML += mt.innerHTML;
+        var secs = ["categories", "prizes", "process", "register", "faq"].map(
+            $,
+          ),
+          lk = document.querySelectorAll("nav ul a"),
+          nu = document.querySelector("nav ul");
+        addEventListener(
+          "scroll",
+          function () {
+            var h = document.documentElement,
+              cur = "";
+            $("prog").style.width =
+              (scrollY / (h.scrollHeight - innerHeight)) * 100 + "%";
+            secs.forEach(function (q) {
+              if (q.getBoundingClientRect().top < innerHeight * 0.4) cur = q.id;
+            });
+            lk.forEach(function (a) {
+              a.classList.toggle("act", a.getAttribute("href") === "#" + cur);
+            });
+          },
+          { passive: true },
+        );
+        $("mb").onclick = function () {
+          nu.classList.toggle("open");
+        };
+        lk.forEach(function (a) {
+          a.addEventListener("click", function () {
+            nu.classList.remove("open");
+          });
+        });
+        $("th").onclick = function () {
+          var r = document.documentElement,
+            dk = r.dataset.theme
+              ? r.dataset.theme === "dark"
+              : matchMedia("(prefers-color-scheme:dark)").matches;
+          r.dataset.theme = dk ? "light" : "dark";
+        };
+        new IntersectionObserver(function (e) {
+          $("stk").classList.toggle("hide", e[0].isIntersecting);
+        }).observe($("register"));
+        var cv = $("pc"),
+          g = cv.getContext("2d"),
+          P = [],
+          W,
+          H,
+          M = { x: -999, y: -999 },
+          hr = document.querySelector(".hero");
+        function rs() {
+          W = cv.width = hr.offsetWidth;
+          H = cv.height = hr.offsetHeight;
+        }
+        rs();
+        addEventListener("resize", rs);
+        for (var i = 0; i < 70; i++)
+          P.push({
+            x: Math.random() * W,
+            y: Math.random() * H,
+            r: Math.random() * 2.2 + 0.8,
+            v: Math.random() * 0.5 + 0.2,
+            a: Math.random() * 0.6 + 0.2,
+          });
+        hr.addEventListener("mousemove", function (e) {
+          var r = hr.getBoundingClientRect();
+          M.x = e.clientX - r.left;
+          M.y = e.clientY - r.top;
+        });
+        hr.addEventListener("mouseleave", function () {
+          M.x = M.y = -999;
+        });
+        if (!rm)
+          (function f() {
+            g.clearRect(0, 0, W, H);
+            P.forEach(function (p) {
+              var dx = p.x - M.x,
+                dy = p.y - M.y,
+                d = Math.hypot(dx, dy);
+              if (d < 130) {
+                p.x += (dx / d) * 3;
+                p.y += (dy / d) * 3;
+              }
+              p.y -= p.v;
+              if (p.y < -5) {
+                p.y = H + 5;
+                p.x = Math.random() * W;
+              }
+              g.globalAlpha = p.a;
+              g.fillStyle = "#ffc83d";
+              g.beginPath();
+              g.arc(p.x, p.y, p.r, 0, 6.3);
+              g.fill();
+            });
+            requestAnimationFrame(f);
+          })();
+        if (fine && !rm) {
+          document.body.classList.add("hascur");
+          var c = $("cur"),
+            d = $("curd"),
+            x = 0,
+            y = 0,
+            mx = 0,
+            my = 0;
+          addEventListener("mousemove", function (e) {
+            mx = e.clientX;
+            my = e.clientY;
+            d.style.transform = "translate(" + mx + "px," + my + "px)";
+            c.style.opacity = d.style.opacity = 1;
+          });
+          (function l() {
+            x += (mx - x) * 0.16;
+            y += (my - y) * 0.16;
+            c.style.transform = "translate(" + x + "px," + y + "px)";
+            requestAnimationFrame(l);
+          })();
+          cards.forEach(function (k) {
+            k.dataset.cur = "Pick";
+          });
+          document.querySelector(".hero .btn").dataset.cur = "Go";
+          document.addEventListener("mouseover", function (e) {
+            c.classList.toggle(
+              "big",
+              !!e.target.closest("a,button,summary,.cat,.feat div"),
+            );
+            var lb = e.target.closest("[data-cur]");
+            c.dataset.t = lb ? lb.dataset.cur : "";
+          });
+          var hero = document.querySelector(".hero"),
+            med = $("medal");
+          hero.addEventListener("mousemove", function (e) {
+            var r = hero.getBoundingClientRect();
+            hero.style.setProperty("--mx", e.clientX - r.left + "px");
+            hero.style.setProperty("--my", e.clientY - r.top + "px");
+            med.style.setProperty(
+              "--ry",
+              (e.clientX / innerWidth - 0.5) * 38 + "deg",
+            );
+            med.style.setProperty(
+              "--rx",
+              (0.5 - (e.clientY - r.top) / r.height) * 22 + "deg",
+            );
+          });
+          document.querySelectorAll(".cat,.feat div").forEach(function (t) {
+            t.classList.add("tilt");
+            var g = document.createElement("span");
+            g.className = "glare";
+            t.appendChild(g);
+            t.addEventListener("mousemove", function (e) {
+              var r = t.getBoundingClientRect(),
+                px = (e.clientX - r.left) / r.width,
+                py = (e.clientY - r.top) / r.height;
+              t.style.transform =
+                "perspective(800px) rotateX(" +
+                (0.5 - py) * 14 +
+                "deg) rotateY(" +
+                (px - 0.5) * 16 +
+                "deg) scale(1.025)";
+              t.style.setProperty("--gx", px * 100 + "%");
+              t.style.setProperty("--gy", py * 100 + "%");
+            });
+            t.addEventListener("mouseleave", function () {
+              t.style.transform = "";
+            });
+          });
+          document.querySelectorAll(".btn").forEach(function (b) {
+            b.addEventListener("mousemove", function (e) {
+              var r = b.getBoundingClientRect();
+              b.style.transform =
+                "translate(" +
+                (e.clientX - r.left - r.width / 2) * 0.25 +
+                "px," +
+                (e.clientY - r.top - r.height / 2) * 0.35 +
+                "px)";
+            });
+            b.addEventListener("mouseleave", function () {
+              b.style.transform = "";
+            });
+          });
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        var g = function (i) {
+            return document.getElementById(i);
+          },
+          it = g("intro"),
+          b = document.body,
+          seen = 0,
+          fin = 0,
+          shown = 0,
+          rd = matchMedia("(prefers-reduced-motion:reduce)").matches;
+        try {
+          seen = sessionStorage.getItem("tn26");
+        } catch (e) {}
+        g("dl").textContent = Math.max(
+          0,
+          Math.ceil(
+            (new Date("2026-11-30T23:59:59+05:30") - Date.now()) / 864e5,
+          ),
+        );
+        new IntersectionObserver(
+          function (e, o) {
+            if (e[0].isIntersecting) {
+              g("bars").classList.add("in");
+              o.disconnect();
+            }
+          },
+          { threshold: 0.4 },
+        ).observe(g("bars"));
+        function shut() {
+          g("md").hidden = true;
+        }
+        function pop() {
+          var ex = 0;
+          try {
+            ex = sessionStorage.getItem("tn26p");
+          } catch (e) {}
+          if (ex) return;
+          function show() {
+            if (
+              shown ||
+              !g("stk").classList.contains("hide") === false ||
+              g("done").style.display === "block"
+            )
+              return;
+            shown = 1;
+            try {
+              sessionStorage.setItem("tn26p", 1);
+            } catch (e) {}
+            g("md").hidden = false;
+            g("md").querySelector("[data-c]").focus();
+          }
+          setTimeout(show, 8000);
+          document.addEventListener("mouseout", function (e) {
+            if (e.clientY <= 0 && !e.relatedTarget) show();
+          });
+        }
+        g("mx").onclick = g("mn").onclick = shut;
+        g("md").addEventListener("click", function (e) {
+          if (e.target === g("md")) shut();
+        });
+        addEventListener("keydown", function (e) {
+          if (e.key === "Escape") shut();
+        });
+        g("md")
+          .querySelectorAll("[data-c]")
+          .forEach(function (x) {
+            x.onclick = function () {
+              g("cat").value = x.dataset.c;
+              shut();
+              location.hash = "#register";
+              g("f").dispatchEvent(new Event("change", { bubbles: true }));
+              setTimeout(function () {
+                g("name").focus({ preventScroll: true });
+              }, 700);
+            };
+          });
+        function end() {
+          if (fin) return;
+          fin = 1;
+          it.classList.add("out");
+          b.classList.add("go");
+          b.classList.remove("lock");
+          setTimeout(function () {
+            it.remove();
+            try {
+              sessionStorage.setItem("tn26", 1);
+            } catch (e) {}
+            pop();
+          }, 950);
+        }
+        if (seen) {
+          it.remove();
+          b.classList.add("go");
+          b.classList.remove("lock");
+          pop();
+        } else {
+          it.onclick = end;
+          var t0 = performance.now(),
+            D = rd ? 500 : 2000;
+          (function f(t) {
+            var p = Math.min(1, (t - t0) / D),
+              e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+            g("ipc").textContent = Math.round(e * 100);
+            g("ibi").style.width = e * 100 + "%";
+            if (p < 1) requestAnimationFrame(f);
+            else setTimeout(end, 150);
+          })(t0);
+        }
+      })();
+    </script>
+  </body>
+</html>
